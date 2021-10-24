@@ -5,7 +5,7 @@
     <hr>
     <div class="row">
       <div class="col-12">
-        <app-form-card *ngFor="let cardElement of cardElements"
+        <app-form-card *ngFor="let cardElement of cards"
         [note]="cardElement" (noteDeleted)="onCardDeleted($event)" (noteEdited)="onCardEdited($event)"></app-form-card>
       </div>
     </div>
