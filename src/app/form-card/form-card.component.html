@@ -1,0 +1,13 @@
+<div class="card">
+    <div class="card-body">
+        <h6 class="card-id text-muted" #noteId>{{note.id}}</h6>
+        <h5 class="card-title">{{note.title}}</h5>
+        <div class="col-12">
+        <textarea class="card-text" readonly="true" placeholder={{note.content}} #noteText></textarea>
+        </div>
+        <button type="button" class="btn btn-primary" (click)="onDelete($event)">Delete</button>
+        <button type="button" class="btn btn-info" (click)="onEdit(noteText, applyEdit)">Edit</button>
+        <button type="button" class="btn btn-secondary" disabled="true" (click)="onEditDone(noteText, applyEdit)" #applyEdit>Apply edit</button>
+    </div>
+    <div class="card-footer text-muted">{{note.createdate}}</div>
+</div>

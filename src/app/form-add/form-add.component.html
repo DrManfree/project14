@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+      <div class="col-12">
+        <form>
+          <div class="form-group">
+            <label for="noteName">New note name</label>
+            <input type="text" class="form-control" placeholder="Enter note name" #noteNameInput>
+          </div>
+          <div class="form-group">
+            <label for="noteContent">Note content</label>
+            <textarea class="form-control" placeholder="Enter note contents here" #noteContentInput></textarea>
+          </div>
+          <button type="button" class="btn btn-primary mt-5" (click)="onAdd(noteNameInput, noteContentInput)">Add</button>
+        </form>
+      </div>
+    </div>
+  </div>
