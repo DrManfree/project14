@@ -5,7 +5,7 @@ import { CardModel } from '../models/card_model';
   providedIn: 'root'
 })
 export class CardsServiceService {
-  cardElements! : CardModel[];
+  cardElements : CardModel[] = [];
   constructor() { }
   addCard (card: CardModel) {
     this.cardElements.push(card);

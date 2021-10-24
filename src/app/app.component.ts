@@ -9,7 +9,7 @@ import { CardsServiceService } from './shared/services/cards-service.service';
 export class AppComponent{
   constructor (private cardsservice: CardsServiceService){}
   title = 'project12new';
-  cards!: CardModel[];
+  cards: CardModel[] = [];
   ngOnInit(): void {
     this.cards = this.cardsservice.cardElements;
     
